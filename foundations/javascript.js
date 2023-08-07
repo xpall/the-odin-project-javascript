@@ -58,3 +58,71 @@ if (cheese) {
 } else {
   console.log("No cheese on toast for you today.");
 }
+
+
+let value = prompt('What is the "official name of JavaScript?');
+if (value == 'ECMAScript') {
+  alert('Right!');
+  } else {
+    alert('You don\'t know? ECMAScript!');
+  }
+
+let value = prompt('What is the "official name of JavaScript?');
+let answer = (value == 'ECMAScript') ? alert('Right!')
+  :alert('You don\'t know? ECMAScript!')
+
+
+
+let number = prompt("Enter a number: ")
+
+if (number > 0) {
+  alert("1")
+}   else if (number < 0) {
+  alert("-1")
+}   else {
+  alert("0")
+}
+
+let number2 = prompt("Enter a number: ")
+
+let message = (number2 > 0) ? alert("1")
+  : (number2 < 0) ? alert("-1")
+  : alert("0");
+
+
+let result = (a + b < 4) ? 'Below': 'Over';
+
+let login = prompt('Username')
+let message = (login == 'Employee') ? 'Hello' : 
+  (login == 'Director') ? 'Greetings' : 
+  (login == '') ? 'No Login' : '';
+alert(message)
+
+let browser = prompt('What browser do you use?')
+
+if (browser == 'Edge') {
+  alert('You\'ve got the Edge!');
+} else if (browser === 'Chrome' 
+  || browser == 'Firefox' 
+  || browser == 'Safari' 
+  || browser == 'Opera') {
+  alert('Okay we support these browsers too');
+} else {
+  alert('We hope that this page looks ok!');
+}
+
+let a = +prompt('a?','')
+
+switch (a) {
+  case 0:
+    alert(0);
+    break;
+
+  case 1:
+    alert(1);
+    
+  case 2:
+  case 3:
+    alert('2,3');
+    break;
+}
