@@ -14,8 +14,12 @@ function getInput() {
 }
 
 function getRange(n) {
-  return (Array(n).fill().map((element, index) => index + 1));
+  return (Array.from(Array(n).keys()));
 }
+
+// Array.from(Array(n).keys())
+//=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 
 function fizzBuzzSubstitution(numRange) {
   for (i of numRange) {
@@ -29,7 +33,7 @@ function fizzBuzzSubstitution(numRange) {
       numRange[i] = i;
     }
   }
-  // return numRange;
+  return numRange;
 }
 
 main();
